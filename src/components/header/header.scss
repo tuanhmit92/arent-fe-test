@@ -1,0 +1,55 @@
+@import "@assets/styles/color-variable";
+.header {
+  width: 100%;
+  height: 64px;
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  &__logo {
+    cursor: pointer;
+    img {
+      width: 109px;
+      height: 40px;
+      margin-top: 16px;
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-right: 25px;
+      cursor: pointer;
+      &:last-child {
+        margin-left: 20px;
+      }
+      &.active {
+        p {
+          color: $orange-2;
+        }
+      }
+      &__icon {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        &__badge {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: $orange;
+          font-size: 10px;
+          text-align: center;
+          top: 0;
+          right: 0;
+          transform: translateX(50%);
+        }
+      }
+    }
+  }
+}

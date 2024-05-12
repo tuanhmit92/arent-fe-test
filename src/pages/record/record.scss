@@ -1,0 +1,67 @@
+@import "@assets/styles/color-variable";
+
+.record {
+  position: relative;
+  margin: 20px 160px;
+  &__recommend {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__item {
+      border: 24px solid $yellow;
+      width: 288px;
+      height: 288px;
+      position: relative;
+      cursor: pointer;
+      &__inner {
+        &__overlay {
+          background-color: rgba(0, 0, 0, 0.25);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: luminosity;
+        width: 100%;
+        height: 100%;
+      }
+      &__info {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        &__title {
+          color: $yellow;
+          font-size: 25px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        &__description {
+          background-color: $orange-2;
+          font-size: 14px;
+          padding: 1px 0 2px;
+          width: 160px;
+          margin: 5px auto;
+        }
+      }
+    }
+  }
+  &__body-record {
+    width: 100%;
+    margin: 40px 0;
+  }
+  &__exercise {
+    width: 100%;
+    margin: 40px 0;
+  }
+  &__diary {
+    width: 100%;
+    margin: 40px 0;
+  }
+}

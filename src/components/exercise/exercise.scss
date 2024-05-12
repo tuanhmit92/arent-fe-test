@@ -1,0 +1,66 @@
+@import "@assets/styles/color-variable";
+
+.exercise {
+  margin: 0 auto;
+  background-color: $gray;
+  &__wrapper {
+    padding: 20px;
+    &__top {
+      display: flex;
+      align-items: center;
+      &__title {
+        font-size: 15px;
+        width: 90px;
+      }
+      &__date {
+        font-size: 22px;
+      }
+    }
+    &__inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 240px;
+      padding-right: 20px;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        width: 6px;
+        background-color: $gray-2;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $yellow;
+      }
+      &__ul {
+        width: 48%;
+        list-style: none;
+        &__li {
+          width: 100%;
+          padding: 5px 0;
+          border-bottom: 1px solid $gray-2;
+          &__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__title {
+              span {
+                font-size: 5px;
+              }
+              font-size: 15px;
+            }
+            &__time {
+              font-size: 18px;
+              color: $yellow;
+            }
+          }
+          &__energy {
+            font-size: 15px;
+            color: $yellow;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

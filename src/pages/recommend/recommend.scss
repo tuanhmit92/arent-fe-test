@@ -1,0 +1,39 @@
+@import "@assets/styles/color-variable";
+
+.recommend {
+  position: relative;
+  margin: 20px 140px;
+  &__select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    &__item {
+      background-color: $dark;
+      width: 214px;
+      height: 144px;
+      position: relative;
+      cursor: pointer;
+      &__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        &__title {
+          color: $yellow;
+          font-size: 22px;
+        }
+        &__line {
+          border-top: 1px solid $white;
+          margin: 10px auto;
+          width: 56px;
+        }
+        &__description {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

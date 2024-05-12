@@ -1,0 +1,16 @@
+@import "../../../assets/styles/color-variable";
+
+.btn-action {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 204, 33, 1) 0%,
+    rgba(255, 150, 60, 1) 100%
+  );
+  width: 296px;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}

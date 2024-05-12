@@ -1,0 +1,30 @@
+@import "@assets/styles/color-variable";
+
+.diary {
+  margin: 0 auto;
+  &__wrapper {
+    color: $gray;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      border: 2px solid #707070;
+      padding: 10px;
+      flex: 1 0 21%;
+      margin: 5px;
+      max-width: 265px;
+      &__date {
+        font-size: 18px;
+        width: 130px;
+        margin-bottom: 10px;
+      }
+      &__text {
+        font-size: 12px;
+        white-space: pre-wrap;
+      }
+    }
+  }
+  &__btn {
+    text-align: center;
+    margin: 10px auto;
+  }
+}

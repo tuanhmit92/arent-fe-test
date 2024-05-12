@@ -1,0 +1,42 @@
+@import "@assets/styles/color-variable";
+@import "@assets/styles/circle-percentage";
+
+.home-top-block {
+  width: auto;
+  height: 316px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__left {
+    width: 40%;
+    height: 100%;
+    background-image: url("../../assets/images/d01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &__info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      p {
+        display: inline;
+      }
+    }
+  }
+  &__right {
+    background-color: $dark;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      height: 90%;
+    }
+  }
+}

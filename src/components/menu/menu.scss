@@ -1,0 +1,16 @@
+@import "@assets/styles/color-variable";
+.menu {
+  background-color: $gray-2;
+  display: inline-grid;
+  position: absolute;
+  top: 50px;
+  right: 190px;
+  z-index: 1;
+  &__item {
+    width: 280px;
+    padding: 22px 30px;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.25);
+    cursor: pointer;
+    font-size: 18px;
+  }
+}

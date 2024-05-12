@@ -1,0 +1,54 @@
+@import "@assets/styles/color-variable";
+
+.recommend-list {
+  margin: 0 auto;
+  &__wrapper {
+    color: $gray;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      flex: 1 0 21%;
+      margin: 5px 0 10px;
+      cursor: r;
+      &__image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 234px;
+        height: 144px;
+        position: relative;
+        &__date {
+          position: absolute;
+          bottom: 0;
+          background-color: $yellow;
+          color: $white;
+          font-size: 15px;
+          padding: 5px;
+        }
+      }
+      &__text {
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        width: 234px;
+        margin: 5px 0;
+      }
+      &__tag {
+        display: flex;
+        align-items: center;
+        &__item {
+          color: $yellow;
+          font-size: 12px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &__btn {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
